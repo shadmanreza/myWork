@@ -38,7 +38,6 @@ import org.scalatest.junit.JUnitRunner
    */
   test("one plus one is two")(assert(1 + 1 == 2))
 
-
   /**
    * In Scala, it is allowed to pass an argument to a method using the block
    * syntax, i.e. `{ argument }` instead of parentheses `(argument)`.
@@ -119,7 +118,16 @@ import org.scalatest.junit.JUnitRunner
   test("max of a few numbers") {
     assert(max(List(3, 7, 2)) === 7)
   }
+  
+  test("sum of an empty list") {
+    assert(sum(List()) === true)
+  }
 
+  test("max of an empty list") {
+    intercept[NoSuchElementException] {
+      max(List())
+    }
+  }
 
 
 }
