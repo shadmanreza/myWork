@@ -1,2 +1,4 @@
 *.cache-main
 scala\HRank-FunctionalProgramming\target\*
+scala\coursera-parallel-programming\week-1\example\target\*
+scala\coursera-parallel-programming\week-1\example\project\target\*
